@@ -1,0 +1,36 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "asass.visible-objects",
+  "name": "Visible Objects",
+  "version": "v1.0.0",
+  "developer": "asass",
+  "description": "Skips drawing level objects outside the screen to reduce rendering work.",
+  "tags": [
+    "performance"
+  ],
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Enable render culling",
+      "description": "Skip drawing level objects outside the visible screen area.",
+      "default": true
+    },
+    "margin": {
+      "type": "int",
+      "name": "Off-screen margin",
+      "description": "Keep objects this many screen points beyond the edge visible to prevent pop-in.",
+      "default": 96,
+      "min": 0,
+      "max": 400,
+      "control": {
+        "slider-step": 16
+      }
+    }
+  },
+  "links": {
+    "source": "https://github.com/asassteier-crypto/visible-objects-geode"
+  }
+}
